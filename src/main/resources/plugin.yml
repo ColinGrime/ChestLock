@@ -1,0 +1,16 @@
+name: ${project.name}
+main: ${main.class}
+version: ${project.version}
+author: Scill
+commands:
+   chestlock:
+      description: Reloads the ChestLock plugin.
+      usage: /<command>
+      aliases: [lock]
+permissions:
+   chestlock.break:
+      description: Break any chest lock!
+      default: op
+   chestlock.reload:
+      description: Reloads the ChestLock plugin.
+      default: op

@@ -1,0 +1,24 @@
+# -= Chest Lock =-
+# Created by Scill
+#
+# The text that players need to type on
+# the first line of a sign to lock it.
+lock-tag: '[Lock]'
+# Called if a player breaks their lock.
+lock-break: '&aYou have broken your lock!'
+
+admin:
+  # Called if an admin breaks somebody else's lock.
+  lock-break: "&aYou have broken %player%'s lock!"
+  # Called when the plugin is reloaded.
+  reload: '&aChestLock has been reloaded!'
+
+errors:
+  # Called if a player tries to break/access an unowned lock.
+  unowned-lock: '&cYou do not own this lock!'
+  # Called if a player tries to break a chest with a lock on it.
+  locked-chest: '&cYou cannot break this chest. It has a lock on it!'
+  # Called if a player tries to place an additional lock on a chest.
+  too-many-locks: '&cThere is already a lock on this chest!'
+  # Called if a player attempts to reload the plugin without permission.
+  insufficient-permissions: '&cYou do not have permission to this command.'
